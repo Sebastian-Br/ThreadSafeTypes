@@ -38,8 +38,7 @@ namespace ThreadSafeTypesTest
             int task_count = 20;
             int internal_loop_count = 10000000; // 10 million
             List<Task> tasks = new();
-            // i.e. we are incrementing and decrementing threadUnsafeInt32 200 million times. the result should be 0.
-            // the result however will not be 0 because the increment/decrement operations are not thread-safe
+            // i.e. we are incrementing and decrementing threadSafeInt32 200 million times. the result should be 0.
             for (int i = 0; i < task_count; i++)
             {
                 tasks.Add(Task.Run(() => IncrementInt32(threadSafeInt32, internal_loop_count)));
@@ -62,8 +61,8 @@ namespace ThreadSafeTypesTest
             int internal_loop_count = 10000000; // 10 million
             int add_value = 3;
             List<Task> tasks = new();
-            // i.e. we are incrementing and decrementing threadUnsafeInt32 200 million times. the result should be 0.
-            // the result however will not be 0 because the increment/decrement operations are not thread-safe
+            // i.e. we are adding/subtracting 3 from threadUnsafeInt32 200 million times. the result should be 0.
+            // the result however will not be 0 because the add/subtract operations are not thread-safe
             for (int i = 0; i < task_count; i++)
             {
                 tasks.Add(Task.Run(() => AddToInt32(threadUnsafeInt32, internal_loop_count, add_value)));
@@ -86,8 +85,6 @@ namespace ThreadSafeTypesTest
             int internal_loop_count = 10000000; // 10 million
             int add_value = 3;
             List<Task> tasks = new();
-            // i.e. we are incrementing and decrementing threadUnsafeInt32 200 million times. the result should be 0.
-            // the result however will not be 0 because the increment/decrement operations are not thread-safe
             for (int i = 0; i < task_count; i++)
             {
                 tasks.Add(Task.Run(() => AddToInt32(threadSafeInt32, internal_loop_count, add_value)));
