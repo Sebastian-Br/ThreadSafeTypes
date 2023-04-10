@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThreadSafeTypes", "ThreadSafeTypes\ThreadSafeTypes.csproj", "{AFD58224-D032-448D-BB9F-62D5AEA1C421}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThreadSafeTypesTest", "ThreadSafeTypesTest\ThreadSafeTypesTest.csproj", "{98F308A3-4473-4C16-B8E3-F5CACA054358}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AFD58224-D032-448D-BB9F-62D5AEA1C421}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AFD58224-D032-448D-BB9F-62D5AEA1C421}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AFD58224-D032-448D-BB9F-62D5AEA1C421}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AFD58224-D032-448D-BB9F-62D5AEA1C421}.Release|Any CPU.Build.0 = Release|Any CPU
+		{98F308A3-4473-4C16-B8E3-F5CACA054358}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98F308A3-4473-4C16-B8E3-F5CACA054358}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98F308A3-4473-4C16-B8E3-F5CACA054358}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98F308A3-4473-4C16-B8E3-F5CACA054358}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FC2DEFAD-E13B-4252-8EC9-0A7CEC75D272}
+	EndGlobalSection
+EndGlobal
